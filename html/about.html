@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/about.css">
+    <title>Title</title>
+</head>
+<body>
+<h1>ART SPREADING PORTAL</h1>
+<ul>
+    <li><a href="home.html">Home</a></li>
+    <li><a href="../../news.html">News</a></li>
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Paintings</a>
+        <div class="dropdown-content">
+            <a href="../../painting1.html">Mona Lisa</a>
+            <a href="../../painting2.html">Link 2</a>
+            <a href="../../painting3.html">Link 3</a>
+        </div>
+    </li>
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn" >Artists</a>
+        <div class="dropdown-content">
+            <a href="artist1.html">Leonardo da Vinci</a>
+            <a href="artist2.html">Claude Monet</a>
+            <a href="artist3.html">Pablo Picasso</a>
+        </div>
+    </li>
+    <li><a href="about.html" class="active">About</a></li>
+    <li class="subnav">
+        <div><button class="subnavbtn">Contact <i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+                <a href="#telegram">Telegram</a>
+                <a href="#instagram">Instagram</a>
+                <a href="#email">Email</a>
+                <a href="#mobilephone">Mobile Phone</a>
+                <a href="#address">Postal Address</a>
+            </div>
+        </div>
+    </li>
+</ul>
+
+<table class="container">
+    <thead>
+    <tr>
+        <th>Author Name</th>
+        <th>Contact via</th>
+        <th>Creation date</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Oleksandr Korotetskyi</td>
+        <td>csraea@gmail.com</td>
+        <td>03.03.2020</td>
+    </tr>
+    </tbody>
+</table>
+
+<picture>
+    <source media="(min-width: 1280px)" srcset="../media/garden.jpg">
+    <source media="(min-width: 1000px)" srcset="../media/8091224.jpg">
+    <img src="../media/claude-monet.jpg" alt="Some pic" style="width:auto;">
+</picture>
+
+<br>
+<br>
+<div class="tooltip"><h3>Oh, no!  Alex is...</h3>
+    <span class="tooltiptext"> a BLACKMAN!!!</span>
+</div>
+
+
+<div class="grid-1">
+    <div class="item-1">Blackman is here...</div>
+    <div class="item-2">
+        <canvas id="canvas"></canvas>
+        <script>
+            // get the canvas
+            var canvas = document.getElementById('canvas');
+            var ctx = canvas.getContext('2d');
+
+            // set dimensions
+            var width = window.innerWidth;
+            var height = window.innerHeight;
+            canvas.width = width;
+            canvas.height = height;
+
+            function drawCircle(color, x, y, radius) {
+                ctx.strokeStyle = ctx.fillStyle = color;
+                ctx.beginPath();
+                ctx.arc(x, y, radius, 0, Math.PI * 2, true);
+                ctx.closePath();
+                ctx.stroke();
+                ctx.fill();
+            }
+
+            function drawTriangle(color, x, y, height) {
+                ctx.strokeStyle = ctx.fillStyle = color;
+                ctx.beginPath();
+                ctx.moveTo(x, y);
+                ctx.lineTo(x - height, y - height);
+                ctx.lineTo(x + height, y - height);
+                ctx.fill();
+            }
+            function drawTriangleR(color, x, y, height) {
+                ctx.strokeStyle = ctx.fillStyle = color;
+                ctx.beginPath();
+                ctx.moveTo(x, y);
+                ctx.lineTo(x + height/7, y + height);
+                ctx.lineTo(x - height/7, y + height);
+                ctx.fill();
+            }
+
+            function drawRectangle(color, x, y, width, height) {
+                ctx.strokeStyle = ctx.fillStyle = color;
+                ctx.fillRect(x, y, width, height);
+            }
+
+            // draw body
+            drawCircle("black", 200, 200, 75);
+            drawCircle("black", 200, 100, 50);
+
+            //draw legs
+            drawCircle("#800000", 260, 414, 24);
+            drawCircle("#800000", 140, 414, 24);
+            drawCircle("#800000", 275, 420, 20);
+            drawCircle("#800000", 125, 420, 20);
+
+            // body p2
+            drawCircle("black", 200, 330, 100);
+
+            // draw eyes
+            drawCircle("white", 220, 90, 5);
+            drawCircle("white", 180, 90, 5);
+
+            // draw buttons
+            // drawCircle("coral", 200, 160, 3);
+            // drawCircle("coral", 200, 200, 3);
+            drawCircle("grey", 200, 247, 3);
+            drawCircle("grey", 200, 270, 3);
+
+            // nose
+            drawTriangle("orange", 200, 110, 7);
+
+            // hat
+            drawRectangle("#99ffcc", 155, 55, 90, 10);
+            drawRectangle("#99ffcc", 170, 0, 60, 55);
+            drawRectangle("#800000", 170, 40, 60, 3);
+            drawRectangle("#800000", 170, 45, 60, 3);
+
+            // arms
+            drawRectangle("#44261c", 270, 200, 55, 5);
+            drawRectangle("#44261c", 80, 200, 50, 5);
+            drawRectangle("#44261c", 80, 160, 5, 40);
+            drawRectangle("#44261c", 320, 205, 5, 40);
+
+            // draw clothes
+            drawTriangle("coral", 200, 155, 11);
+            drawTriangleR("coral", 200, 148, 70);
+            drawTriangle("coral", 200, 228, 10);
+
+
+
+        </script>
+    </div>
+
+</div>
+
+</body>
+</html>

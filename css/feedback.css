@@ -1,0 +1,141 @@
+label{
+    vertical-align: top;
+    display: inline-block; /*instead of inline (default)*/
+    min-width: 10em;
+    font-weight: bold;
+}
+
+label.long{
+    min-width: 8em;
+}
+
+iframe{
+    width: 90%;
+    height: 250px;
+}
+
+textarea {
+    resize: none;
+    border-radius: 10px;
+    color: black;
+}
+
+:required {
+    border: 2px solid black;
+}
+
+:optional {
+    border: 1px solid lightgray;
+}
+
+
+input:invalid, textarea:invalid{
+    border-color: orangered;
+    /*color: red;*/
+}
+
+:out-of-range{
+    color: red;
+}
+
+input:valid{
+    color: darkgreen;
+    border-color: lightgreen;
+}
+
+.basicInfo,.privateInfo,.buttonInfo{
+    color: mintcream;
+    border: black 1px solid;
+    margin: 17px;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 20px;
+}
+
+.basicInfo>input,.basicInfo>span>input{
+    border-radius: 50px;
+    display: inline-block;
+    resize: none;
+    width: 200px;
+    padding: 2px 2px 2px 5px;
+    overflow-x: hidden;
+}
+
+.basicInfo>input.longInput,.basicInfo>span>input.longInput{
+    border-radius: 50px;
+    display: inline-block;
+    resize: none;
+    width: 81%;
+    overflow-x: hidden;
+    padding: 2px 2px 2px 5px;
+    opacity: 100%;
+    color: black;
+}
+
+/*article#Form{*/
+/*    background: url(https://images.hdqwalls.com/download/triangles-colorful-background-nz-1920x1080.jpg);*/
+/*    background-size: cover;*/
+/*    justify-content:center;*/
+/*}*/
+
+
+
+button.green{
+    color: lightgreen;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid #00bf0c;
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+
+
+button.red{
+    color: linen;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid red;
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 20px;
+
+    float: right;
+}
+
+
+.opinionsContainer>section.newComment{
+    color: white ;
+    border: white 1px solid;
+    margin: 20px;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+}
+
+#comeback {
+    float: right;
+    padding-right: 20px;
+}
+
+.instr {
+    color: peachpuff;
+    font-weight: bolder;
+
+}
+
+.profile{
+    display: block;
+    margin-bottom: 2px;
+    width: auto;
+    padding: 1%;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 2px solid white;
+    border-radius: 20px;
+}
+
+.profile:hover {
+    width: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+}

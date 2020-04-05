@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+
+<html lang="sk"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="author" content="Oleksandr Korotetskyi">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/artsMain.css" media="screen">
+    <link rel="stylesheet" href="css/feedback.css" media="screen">
+<!--    <link rel="stylesheet" href="ex_files/artsPrint.css" media="print">-->
+
+    <title>ART SPREADING PORTAL</title>
+
+</head>
+
+<body>
+<header>
+    <h1>Art is vital</h1>
+</header>
+
+<nav id="navMenu">
+    <ul>
+        <li><a href="index.html#intro">Welcome</a></li>
+        <li><a href="index.html#art1">Da Vinci</a></li>
+        <li><a href="index.html#art2">Monet</a></li>
+        <li><a href="index.html#art3">Magic</a></li>
+        <li><a href="index.html#form">Feedback</a></li>
+        <li><a href="index.html#Comments">Comments</a></li>
+    </ul>
+</nav>
+
+<main>
+
+    <article id="intro">
+        <h2>Introduction</h2>
+        <p>
+            Welcome on my page! I am <b><i>Oleksandr Korotetskyi</i></b>
+            and this is the extension of the very <i>ART SPREAING PORTAL</i>.
+            Art is the true beauty and our goal is to spread it among people.
+            <i>Enjoy. Get inspired. Get ready. Create.</i>
+        </p>
+    </article>
+
+    <article id="art1">
+        <h2>Da Vinci</h2>
+        <figure>
+            <img src="media/unnamed.jpg" height="310" title="leonardo" alt="daVinci">
+        </figure>
+        <section>
+            <header><h2>Basic info</h2></header>
+            <p>Leonardo Da Vinci was an artist from Florencia.</p>
+            <article>
+                <h2>Mona Lisa</h2>
+                <p>Between 1505 to 1507 Leonardo da Vinci was commissioned for a private work. It was during this period that he not only created his most famous piece of art work, but also possibly one of the most well known, and the most famous pieces of art work which has ever been crafted in the world, The Mona Lisa. There were many theories and stories behind this piece. Some included that she had jaundice, many thought it was a piece of a pregnant women, and others claim it is not a woman at all, but a man dressed in drag. Although no accounts are proven, there are many theories surrounding this piece, and this is what gives it so much allure.
+                    The Mona Lisa was also a constant work in progress for Leonardo da Vinci; it was a piece he never quite finished, and was always trying to perfect. The painting itself was never given to the commissioner who had hired him for the work, and was kept with him until his death. It is currently in the Louvre in Paris, and is protected by the thickest bullet proof glass. It is not only considered to be a national treasure, it is also considered the most famous art piece to have been created, by any artist, during any period or form of art.</p>
+            </article>
+        </section>
+        <footer class="menuLink"><a href="index.html#navMenu">Back to menu</a></footer>
+    </article>
+
+    <article id="art2">
+        <h2>Claude Monet</h2>
+        <figure>
+            <img src="media/monet.jpg" height="310" title="claude" alt="monet">
+        </figure>
+        <header><h2>Basic info</h2></header>
+        <p>Claude Monet was a famous artist.</p>
+        <article>
+            <h2>Water Lilies</h2>
+            <p>Near the end of his life, Monet embarked on his largest project. It was a series on the pond at his home in Giverny. It involved a number of huge paintings of the pond in different lighting and conditions such as morning, sunset, and clouds. He called it the Grandes Decorations. When finished, all the panels together were over 6 feet tall and nearly 300 feet long. During much of the project the aging Monet was suffering from bad eyesight and lung cancer. He spent the last ten years of his life on the project and donated it to France in honor of the end of World War I.</p>
+        </article>
+    </article>
+
+    <article id="art3">
+        <h2>Magic is everywhere</h2>
+        <header><h2>Have you ever seen the real magic?</h2></header>
+        <div class="color"><p><span>Lorem dolor!</span></p></div>
+
+        <div class="container" title="Black Hole...">
+
+            <svg class="loader" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 340">
+                <circle cx="170" cy="170" r="160" stroke="#E2007C"/>
+                <circle cx="170" cy="170" r="135" stroke="#404041"/>
+                <circle cx="170" cy="170" r="110" stroke="#E2007C"/>
+                <circle cx="170" cy="170" r="85" stroke="#404041"/>
+            </svg>
+
+        </div>
+    </article>
+
+
+    <article id="form">
+        <h2>Leave some feedback!</h2>
+        <br>
+        <form id="opnForm">
+        <div class="basicInfo">
+
+            <label for="fname">Name:</label><br>
+            <span class="resizeable">
+                        <input type="text" name="fname" id="fname"  title="max. 200 characters" required spellcheck="true" lang="en" autocomplete="on" placeholder="Oleksandr"/><br>
+                    </span><br>
+
+
+            <label for="sname">Surname:</label><br>
+            <span class="resizeable">
+                        <input type="text" name="sname" id="sname"  size="40" title="max. 200 characters" maxlength="200" required spellcheck="true" lang="en" autocomplete="on" placeholder="Korotetskyi"/><br>
+                    </span><br>
+
+
+
+            <label for="email">E-mail:</label><br>
+            <span class="resizeable longInput">
+                        <input class="longInput" type="email" name="email" id="email" title="max. 200 characters" required spellcheck="true" lang="en" autocomplete="on" placeholder="oleksandr.korotetskyi@student.tuke.sk"/><br>
+                    </span><br><br>
+
+
+            <label for="photo">Photo (link):</label><br>
+            <span class="longInput">
+                        <input  class="longInput" type="url" name="photo" id="photo"   title="max. 200 characters"  lang="en" autocomplete="on" placeholder="https://photo.com/your"/><br>
+                    </span>
+        </div>
+
+
+        <div class="privateInfo">
+            <p class="instr">Gender:</p>
+
+            <div>
+                <input type="radio" id="Male" name="Gender" value="Male">
+                <label for="Male">Male</label>
+            </div>
+
+            <div>
+                <input type="radio" id="Female" name="Gender" value="Female">
+                <label for="Female">Female</label>
+            </div>
+
+            <div>
+                <input type="radio" id="Other" name="Gender" value="Other">
+                <label for="Other">Other</label>
+            </div>
+
+            <p class="instr">Marital status:</p>
+
+            <div>
+                <input type="radio" id="Married" name="MaritalStatus" value="Married">
+                <label for="Married">Married</label>
+                <input type="radio" id="Unmarried" name="MaritalStatus" value="Unmarried">
+                <label for="Unmarried">Single</label>
+            </div>
+
+            <br>
+            <div>
+                <label for="FavoriteList">Favourite artist:</label>
+                <input list="Favorite" id="FavoriteList" name="FavoriteList" placeholder="Choose one"/>
+                <datalist id="Favorite">
+                    <option value="Monet">
+                    <option value="Picasso">
+                    <option value="da Vinci">
+                    <option value="Renoir">
+                    <option value="Other">
+                </datalist>
+            </div>
+
+            <p class="instr" id="org">Where are you from?</p>
+
+            <div>
+                <input type="checkbox" id="Europe" name="Europe">
+                <label for="Europe">Europe</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="NorthA" name="NorthA">
+                <label for="NorthA">North America</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="SouthA" name="SouthA">
+                <label for="SouthA">South America</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="Asia" name="Asia">
+                <label for="Asia">Asia</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="Africa" name="Africa">
+                <label for="Africa">Africa</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="Oceania" name="Oceania">
+                <label for="Oceania">Oceania</label>
+            </div>
+            <br>
+
+            <label for="comment"><br>Comment us:</label>
+            <textarea id="comment" name="comment" placeholder="Your comment." rows="3" cols="38"></textarea><br><br>
+                <span id="comeback">
+                <input type="checkbox" id="willReturnElm" />
+                <label for="willReturnElm">I am going to return!</label>
+                </span>
+
+            <br>
+        </div>
+
+        <button class="green" type="submit">Submit</button>
+        <button class="red" type="reset">Reset</button>
+            <button class="red" type="reset" onclick="
+                let k=0;
+                for (let i = 0; i < comments.length; i++ )
+                    if (Date.now() - new Date(comments[i].created) > 84600000 )
+                        k=i;
+                comments.splice(0,k);
+                localStorage.myTreesComments = JSON.stringify(comments);
+                commentsElm.innerHTML=commentArray2html(comments);
+                localStorage.clear();
+                window.alert('old data has been deleted');
+                location.reload();">
+                Delete comments
+            </button>
+
+
+        </form>
+    </article>
+
+<article  id="Comments">
+    <h2 class="center">Comments</h2>
+        <div id="opinionsContainer"></div>
+
+</article>
+
+
+<script id="mTmplOneOpinion" type="text/template">
+    <section style="color: white;
+    border: white 1px solid;
+    margin: 20px;
+    font-size: smaller;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;">
+        <h3 style="color: orangered; "><img src="{{Img}}" class="profile" style=" margin-top: auto; margin-bottom: auto; width: 70px; height: 70px; border-radius: 3px; border: 1px solid grey; float: right" alt="!!!">   {{FName}} {{SName}} <i style="color: aquamarine; font-family: 'Tw Cen MT', Arial, Helvetica, sans-serif; font-size: 75%;"> [{{Date}}]</i></h3>
+        <p><b>Gender:</b> <span>{{Sex}}</span></p>
+        <p><b>E-mail:</b> <span>{{Email}}</span></p>
+        <p><b>Marital status:</b> <span>{{Stat}}</span></p>
+        <p><b>Origin:</b> <span>{{Orig}}</span></p>
+        <p><b>Favourite artist:</b> <span>{{Fav}}<br><br></span></p>
+        <p><b style="color: cornflowerblue">Comment:</b> <span>{{Com}}</span>
+        <p><span>{{willReturnMessage}}</span></p>
+    </section>
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.1.0/mustache.min.js"
+        integrity="sha256-MPgtcamIpCPKRRm1ppJHkvtNBAuE71xcOM+MmQytXi8="
+        crossorigin="anonymous">
+</script>
+<script src="js/comments.js"></script>
+</main>
+
+<aside>
+    <ul>
+        <li><a href="html/home.html" target="_blank">Home</a> <br>
+        </li><li><a href="html/artist1.html" target="_blank">da Vinci</a> <br>
+    </li><li><a href="html/artist2.html" target="_blank">Monet</a> <br>
+    </li><li><a href="html/about.html" target="_blank">About</a>
+    </li></ul>
+</aside>
+
+<footer>
+    Oleksandr Korotetskyi. All rights reserved (c). 2020
+</footer>
+
+
+</body>
+</html>
+
+

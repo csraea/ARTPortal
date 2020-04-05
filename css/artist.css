@@ -1,0 +1,239 @@
+body {
+    background-image: url('../media/background4.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-family: Arial;
+    background-image: url('../media/background5.png');
+    margin: 0;
+    padding: 1%;
+}
+
+p {
+    font-family: verdana;
+    font-size: 20px;
+    background-color: rgba(0, 85, 1, 0.4);
+    margin: 0;
+    padding: 20px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    top: 0;
+    position: sticky;
+}
+
+.sticky {
+    top: 0;
+    position: sticky;
+}
+
+li {
+    display: inline-block;
+
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: cornflowerblue;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 999999999;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.subnav {
+    float: right;
+    overflow: hidden;
+}
+
+.subnav .subnavbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+    background-color: cornflowerblue;
+}
+
+.subnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: cornflowerblue;
+    width: 100%;
+    z-index: 999999999;
+}
+
+.subnav-content a {
+    float: right;
+    color: white;
+    text-decoration: none;
+}
+
+.subnav-content a:hover {
+    background-color: #eee;
+    color: black;
+}
+
+.subnav:hover .subnav-content {
+    display: block;
+}
+
+.active {
+    background-color: mediumaquamarine;
+    color: #333333;
+}
+
+header {
+    background-color: rgba(255, 135, 0, 0.4);
+    padding: 8px;
+    text-align: center;
+    font-size: 24px;
+    color: black;
+    font-family: Arial;
+}
+
+/* Create two columns/boxes that floats next to each other */
+
+/* Style the list inside the menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+article {
+    float: right;
+    padding: 1%;
+    width: 68%;
+    color: white;
+    font-family: Arial;
+}
+
+/* Clear floats after the columns */
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the footer */
+footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    float: bottom;
+}
+
+.leftSideImg {
+    padding: 1%;
+    margin-left: 2%;
+    margin-top: 20px;
+    width: 43%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 2px solid white;
+    border-radius: 20px;
+    float: left;
+}
+
+.rightSideImg {
+    padding: 1%;
+    margin-right: 2%;
+    margin-top: 20px;
+    width: 43%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 2px solid white;
+    float: right;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 700px) {
+    nav, article {
+        width: auto;
+        height: auto;
+    }
+    .leftSideImg, .rightSideImg {
+        width: 46%;
+        height: auto;
+        float: none;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+}
+
+@media (min-width: 700px) {
+    article {
+        width: 50%;
+        height: auto;
+    }
+
+    .leftSideArticle {
+        float: left;
+    }
+}
+
+@media (min-width: 1050px) {
+    article {
+        width: 60%;
+        height: auto;
+    }
+
+    .leftSideImg, .rightSideImg {
+        width: 25%;
+    }
+    .leftSideArticle {
+        float: left;
+    }
+}
+
+
+
+
