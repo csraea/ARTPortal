@@ -106,6 +106,7 @@ main > article > h2{
     padding: 0.5rem;
     border-radius: 1rem;
     margin: 0;
+    border: 2px solid white;
 
     transition-property: background;
     transition-duration: .2s;

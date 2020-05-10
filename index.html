@@ -4,6 +4,13 @@
 
     <meta name="author" content="Oleksandr Korotetskyi">
 
+
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="86655932437-mqim51nts1996iegku8kgknd923tas94.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+
+
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/artsMain.css" media="screen">
     <link rel="stylesheet" href="css/feedback.css" media="screen">
@@ -221,8 +228,30 @@
             </button>
 
 
+            <br>
+            <hr>
+            <br>
+                <div  id="googleSignIn">
+                    <div id="SignInButton"></div>
+                    <div id="SignedIn">
+                        <button onclick="signOut()" class="red">Sign out</button>
+                    </div>
+                    <br>
+                    <hr>
+                    <br>
+                </div>
+
+
+            <script src="js/SignInGoogle.js"></script>
+            <script src="https://apis.google.com/js/platform.js?onload=startGSingIn" async defer></script>
+
+
         </form>
     </article>
+
+
+
+
 
 <article  id="Comments">
     <h2 class="center">Comments</h2>
@@ -239,7 +268,7 @@
     border-radius: 50px;
     background-color: rgba(0, 0, 0, 0.8);
     padding: 20px;">
-        <h3 style="color: orangered; "><img src="{{Img}}" class="profile" style=" margin-top: auto; margin-bottom: auto; width: 70px; height: 70px; border-radius: 3px; border: 1px solid grey; float: right" alt="!!!">   {{FName}} {{SName}} <i style="color: aquamarine; font-family: 'Tw Cen MT', Arial, Helvetica, sans-serif; font-size: 75%;"> [{{Date}}]</i></h3>
+        <h3 style="color: orangered; "><img src="{{Img}}" class="profile" style="width: 100px; height: 100px; border-radius: 5px; border: 1px solid black; float: right; margin: 24px" alt="!!!">   {{FName}} {{SName}} <i style="color: aquamarine; font-family: 'Tw Cen MT', Arial, Helvetica, sans-serif; font-size: 75%; float: right"> [{{Date}}]</i></h3>
         <p><b>Gender:</b> <span>{{Sex}}</span></p>
         <p><b>E-mail:</b> <span>{{Email}}</span></p>
         <p><b>Marital status:</b> <span>{{Stat}}</span></p>
@@ -254,16 +283,20 @@
         crossorigin="anonymous">
 </script>
 <script src="js/comments.js"></script>
+
+
 </main>
 
 <aside>
     <ul>
         <li><a href="html/home.html" target="_blank">Home</a> <br>
         </li><li><a href="html/artist1.html" target="_blank">da Vinci</a> <br>
-    </li><li><a href="html/artist2.html" target="_blank">Monet</a> <br>
-    </li><li><a href="html/about.html" target="_blank">About</a>
-    </li></ul>
+        </li><li><a href="html/artist2.html" target="_blank">Monet</a> <br>
+        </li><li><a href="html/about.html" target="_blank">About</a> <br>
+        </li><li><a href="html/router.html">Router</a> <br>
+        </li></ul>
 </aside>
+
 
 <footer>
     Oleksandr Korotetskyi. All rights reserved (c). 2020
